@@ -41,7 +41,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnNovPesquisa = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicPesquisar)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -80,7 +83,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnCancelar);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.btnSalvar);
             this.groupBox1.Controls.Add(this.comboSexo);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
@@ -174,17 +179,53 @@
             this.txtNome.TabIndex = 20;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
-            // button1
+            // btnSalvar
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(615, 52);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 37);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Alterar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnSalvar.Location = new System.Drawing.Point(29, 329);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(94, 33);
+            this.btnSalvar.TabIndex = 8;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnNovPesquisa
+            // 
+            this.btnNovPesquisa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNovPesquisa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnNovPesquisa.Location = new System.Drawing.Point(446, 52);
+            this.btnNovPesquisa.Name = "btnNovPesquisa";
+            this.btnNovPesquisa.Size = new System.Drawing.Size(152, 37);
+            this.btnNovPesquisa.TabIndex = 9;
+            this.btnNovPesquisa.Text = "Nova Pesquisa";
+            this.btnNovPesquisa.UseVisualStyleBackColor = false;
+            this.btnNovPesquisa.Click += new System.EventHandler(this.btnNovPesquisa_Click);
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAlterar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnAlterar.Location = new System.Drawing.Point(613, 52);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(105, 37);
+            this.btnAlterar.TabIndex = 25;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnCancelar.Location = new System.Drawing.Point(134, 329);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(94, 33);
+            this.btnCancelar.TabIndex = 25;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // ManClientes
             // 
@@ -192,13 +233,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(753, 530);
             this.ControlBox = false;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnNovPesquisa);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.PicPesquisar);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ManClientes";
             this.Text = "Manutenção de Clientes";
+            this.Load += new System.EventHandler(this.ManClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicPesquisar)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -222,6 +265,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnNovPesquisa;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
