@@ -41,6 +41,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicPesquisar)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -173,12 +174,24 @@
             this.txtNome.TabIndex = 20;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button1.Location = new System.Drawing.Point(615, 52);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 37);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Alterar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // ManClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(753, 530);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.PicPesquisar);
@@ -208,5 +221,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Button button1;
     }
 }

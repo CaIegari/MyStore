@@ -46,12 +46,23 @@ namespace MyStore
                 comando = new SqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@cpf", txtCpf.Text);
                 dr = comando.ExecuteReader();
+                bool resultado = false;
                 while (dr.Read())
                 {
+                    resultado = true;
                     txtNome.Text = Convert.ToString(dr["nome"]);
                     txtEndereco.Text = Convert.ToString(dr["endereco"]);
                     txtTelefone.Text = Convert.ToString(dr["telefone"]);
                     comboSexo.SelectedItem = Convert.ToString(dr["sexo"]);
+
+                }
+                if(resultado == false)
+                {
+                    MessageBox.Show("Cliente não encontrado", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtNome.Text = "";
+                    txtEndereco.Text = "";
+                    txtTelefone.Text = "";
+                    comboSexo.SelectedItem = null;
 
                 }
             }
