@@ -1,0 +1,15 @@
+C:\Users\caleg\source\repos\MyStore\MyStore\bin\Debug\MyStore.exe.config
+C:\Users\caleg\source\repos\MyStore\MyStore\bin\Debug\MyStore.exe
+C:\Users\caleg\source\repos\MyStore\MyStore\bin\Debug\MyStore.pdb
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.csprojAssemblyReference.cache
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.Form1.resources
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.Properties.Resources.resources
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.csproj.GenerateResource.cache
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.csproj.CoreCompileInputs.cache
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.exe
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.pdb
+C:\Users\caleg\source\repos\MyStore\MyStore\bin\Debug\bancoStore.mdf
+C:\Users\caleg\source\repos\MyStore\MyStore\bin\Debug\bancoStore_log.ldf
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.menuPrincipal.resources
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.cadCliente.resources
+C:\Users\caleg\source\repos\MyStore\MyStore\obj\Debug\MyStore.ManClientes.resources
