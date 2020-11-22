@@ -78,5 +78,37 @@ namespace MyStore
                 comando = null;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conexao = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\caleg\source\repos\MyStore\MyStore\bancoStore.mdf;Integrated Security=True");
+                strSQL = "UPDATE clientes SET nome = @nome, endereco = @endereco, telefone = @telefone, sexo = @sexo WHERE cpf = @cpf;";
+                comando = new SqlCommand(strSQL, conexao);
+                comando.Parameters.AddWithValue("@cpf", txtCpf.Text);
+                comando.Parameters.AddWithValue("@nome", txtNome.Text);
+                comando.Parameters.AddWithValue("@endereco", txtEndereco.Text);
+                comando.Parameters.AddWithValue("@telefone", txtTelefone.Text);
+                comando.Parameters.AddWithValue("@sexo", comboSexo.SelectedItem.ToString());
+                conexao.Open();
+                dr = comando.ExecuteReader();
+                MessageBox.Show("Cliente alterado com sucesso", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR: " + ex.Message);
+            }
+
+            finally
+            {
+                conexao.Close();
+                conexao = null;
+                comando = null;
+            }
+        }
     }
 }
