@@ -110,9 +110,8 @@ namespace MyStore
                 enabledCamps(false);
                 btnSalvar.Hide();
                 btnCancelar.Hide();
-
-
-
+                btnNovPesquisa.Enabled = true;
+                
             }
             catch (Exception ex)
             {
@@ -154,6 +153,7 @@ namespace MyStore
             enabledCamps(true);
             btnSalvar.Show();
             btnCancelar.Show();
+            btnNovPesquisa.Enabled = false;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -180,6 +180,7 @@ namespace MyStore
                     btnAlterar.Enabled = true;
                     btnCancelar.Hide();
                     btnSalvar.Hide();
+                    btnNovPesquisa.Enabled = true;
                 }
                 if (resultado == false)
                 {
