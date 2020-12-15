@@ -115,7 +115,7 @@
             // incluirToolStripMenuItem1
             // 
             this.incluirToolStripMenuItem1.Name = "incluirToolStripMenuItem1";
-            this.incluirToolStripMenuItem1.Size = new System.Drawing.Size(217, 26);
+            this.incluirToolStripMenuItem1.Size = new System.Drawing.Size(153, 26);
             this.incluirToolStripMenuItem1.Text = "Incluir";
             this.incluirToolStripMenuItem1.Click += new System.EventHandler(this.incluirToolStripMenuItem1_Click);
             // 
@@ -123,7 +123,7 @@
             // 
             this.consultarToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
-            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(217, 26);
+            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(153, 26);
             this.consultarToolStripMenuItem1.Text = "Consultar";
             this.consultarToolStripMenuItem1.Click += new System.EventHandler(this.consultarToolStripMenuItem1_Click);
             // 
@@ -142,6 +142,7 @@
             this.incluirToolStripMenuItem2.Name = "incluirToolStripMenuItem2";
             this.incluirToolStripMenuItem2.Size = new System.Drawing.Size(217, 26);
             this.incluirToolStripMenuItem2.Text = "Incluir";
+            this.incluirToolStripMenuItem2.Click += new System.EventHandler(this.incluirToolStripMenuItem2_Click);
             // 
             // consultarToolStripMenuItem2
             // 

@@ -58,5 +58,12 @@ namespace MyStore
             manCliente.Show();
             this.Enabled = false;
         }
+
+        private void incluirToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            cadFornecedor newScreen = new cadFornecedor();
+            newScreen.Show();
+            this.Enabled = false;
+        }
     }
 }

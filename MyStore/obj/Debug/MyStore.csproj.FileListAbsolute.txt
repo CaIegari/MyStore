@@ -28,3 +28,4 @@ C:\Projetos\MyStore\MyStore\obj\Debug\MyStore.csproj.GenerateResource.cache
 C:\Projetos\MyStore\MyStore\obj\Debug\MyStore.csproj.CoreCompileInputs.cache
 C:\Projetos\MyStore\MyStore\obj\Debug\MyStore.exe
 C:\Projetos\MyStore\MyStore\obj\Debug\MyStore.pdb
+C:\Projetos\MyStore\MyStore\obj\Debug\MyStore.cadFornecedor.resources
